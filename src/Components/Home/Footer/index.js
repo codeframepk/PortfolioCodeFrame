@@ -46,7 +46,7 @@ export default function AutoGrid() {
             </Grid>
           </Grid>
           <Grid item xs>
-            <Grid container spacing={2}>
+            <Grid container spacing={0}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" className={classes.demo}>
                   Navigate
@@ -64,7 +64,7 @@ export default function AutoGrid() {
             </Grid>
           </Grid>
           <Grid item xs>
-            <Grid container spacing={2}>
+            <Grid container spacing={0}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" className={classes.demo}>
                   Contect Us

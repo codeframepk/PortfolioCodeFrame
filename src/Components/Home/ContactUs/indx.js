@@ -1,30 +1,31 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import clsx from "clsx";
+import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import Navbar from "../../Home/Header/Menu";
-import Typography from "@material-ui/core/Typography";
+import Footer from "../../Home/Footer/";
 import { useStyles } from "./style.js";
-import Footer from "../Footer"
+import Button from "@material-ui/core/Button";
 
-export default function FullWidthGrid() {
+
+export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Navbar />
+    <div>
       <Grid container spacing={0}>
-        <Grid item xs={12} sm={6} className={classes.bgimage}>
-          <div className={classes.blurimg} />
+        <Grid item xs={12} sm={6} >
+          
         </Grid>
-        <Grid align="center" item xs={12} sm={6}>
-          <Typography variant="h4" gutterBottom>
-            Send Us A Message
-          </Typography>
+        <Grid align="center" item xs={12} sm={6} className={classes.form}>
+         
+          {/* <Typography variant="h6" gutterBottom className={classes.contactText}>
+            Enter Your Name:
+          </Typography> */}
           <TextField
             id="outlined-email-input"
-            label="Enter Your Name"
+            label="NAME "
             className={classes.textField}
             type="email"
             name="email"
@@ -32,38 +33,40 @@ export default function FullWidthGrid() {
             margin="normal"
             variant="outlined"
           />
+           {/* <Typography variant="h6" gutterBottom className={classes.contactText}>
+            Enter Your Email:
+          </Typography> */}
           <TextField
             id="outlined-email-input"
-            label="Enter Your Email"
+            label="EMAIL"
             className={classes.textField}
             type="email"
             name="email"
             autoComplete="email"
-            margin="normal"
             variant="outlined"
           />
+          {/* <Typography variant="h6" gutterBottom className={classes.contactText}>
+            Message
+          </Typography> */}
           <TextField
             id="outlined-multiline-static"
-            label="Your Message"
+            label="Message Here"
             multiline
-            rows="10"
+            rows="8"
             defaultValue=""
             className={classes.textField}
             margin="normal"
             variant="outlined"
           />
-          <div>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.button}
-            >
-              Send
-            </Button>
-          </div>
+          
+          <Button variant="contained" color="primary" className={classes.button}>
+        Primary
+      </Button>
+       
         </Grid>
+        
+        <Footer />
       </Grid>
-<Footer />
     </div>
   );
 }
