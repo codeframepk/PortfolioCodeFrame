@@ -25,15 +25,23 @@ export const useStyles = makeStyles(theme => ({
     
   },
   demo:{
-      marginLeft:'30%',
+      marginLeft:'25%',
       color:'white',
+      
 
   },
+  txt:{
+ justifyContent:'center'
+  },
   icon: {
-    height:"80px",
-    width:"80px",
+    height:"50px",
+    width:"50px",
     color:"white"
         
+  },
+  favicon:{
+    justifyContent:'center'
+    // alignSelf: "center"
   },
   iconHover: {
     margin: theme.spacing(2),

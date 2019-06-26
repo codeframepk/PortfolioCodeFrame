@@ -27,8 +27,8 @@ export default function AutoGrid() {
     <div className={classes.fimage}>
       <div className={classes.bgcolor}>
         <Grid container spacing={0}>
-          <Grid item xs>
-            <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <Grid container spacing={0} className={classes.txt}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" className={classes.demo}>
                   Creative Solutions
@@ -45,11 +45,11 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs>
-            <Grid container spacing={0}>
+          <Grid item xs={4}>
+            <Grid container spacing={0} className={classes.txt}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" className={classes.demo}>
-                  Navigate
+                  Creative Solutions
                 </Typography>
                 <div className={classes.demo}>
                   <List>
@@ -63,11 +63,11 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs>
-            <Grid container spacing={0}>
+          <Grid item xs={4}>
+            <Grid container spacing={0} className={classes.txt}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" className={classes.demo}>
-                  Contect Us
+                  Creative Solutions
                 </Typography>
                 <div className={classes.demo}>
                   <List>
@@ -82,25 +82,12 @@ export default function AutoGrid() {
             </Grid>
           </Grid>
           <Grid container spacing={0}>
-            <Grid item xs={6} sm={4} />
-
-            <Grid item xs={6} sm={4}>
-              <Grid container spacing={0}>
-                <Grid item xs={6} sm={3}>
+                <Grid align="center" item xs={12} sm={12} >
                   <FaFacebookSquare className={classes.icon} />
-                </Grid>
-                <Grid item xs={6} sm={3}>
                   <FaGooglePlusSquare className={classes.icon} />
-                </Grid>
-                <Grid item xs={6} sm={3}>
                   <FaInstagram className={classes.icon} />
-                </Grid>
-                <Grid item xs={6} sm={3}>
                   <FaTwitterSquare className={classes.icon} />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item xs={6} sm={4} />
+              </Grid>           
           </Grid>
         </Grid>
       </div>
